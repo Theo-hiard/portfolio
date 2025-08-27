@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #1E2A38;
+    font-family: 'Noto Sans';
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: center;
+}
+
+li {
+    margin-right: 30px;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: 800;
+    color: #1E2A38;
+}
+
+.learn-more {
+    font-weight: 300;
+}
+
+.project {
+    color: #AE847E;
+    font-weight: 600;
+    border: #AE847E 3px solid;
+    padding: 10px;
+}
+
+.contact {
+    font-weight: 400;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.animation {
+    max-width: 25%;
+}
+
+.text {
+    margin-left: 10%;
+    max-width: 45%;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+    max-width: 80%;
+}
+
+.web-dev {
+    color: #137547;
+    font-weight: 900;
+}
+
+p {
+    margin-top: 30px;
+    max-width: 80%;
+}
+
+.animation {
+    margin-right: 20%
+}
+
+#lottie-animation {
+    width: 550px;
+}
+
+.stats {
+    display: flex;
+    margin-top: 50px;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+#reviews h3 {
+    color: #137547;
+    margin-bottom: 0;
+    border: #137547 3px solid;
+    padding: 20px 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+#technologies h3,
+#experience h3 {
+    color: #AE847E;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    border: #AE847E 3px solid;
+    padding: 20px 22px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.stats p {
+    margin-top: 10px;
+}
