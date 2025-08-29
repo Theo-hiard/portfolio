@@ -11,10 +11,16 @@ body {
     font-family: 'Noto Sans';
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 a{
     color: #1E2A38;
     text-decoration: none;
 }
+
+/*********************** Navigation Bar ***********************/
 
 nav{
     position: fixed;
@@ -27,7 +33,6 @@ nav{
 }
 
 .nav-active {
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     background-color: #137547;
 }
 
@@ -47,7 +52,7 @@ nav{
     color: #AE847E;
 }
 
-ul {
+nav ul {
     position: relative;
     display: flex;
     list-style: none;
@@ -57,7 +62,7 @@ ul {
     padding-bottom: 20px;
 }
 
-li {
+nav li {
     margin-right: 30px;
 }
 
@@ -83,10 +88,19 @@ li {
     font-weight: 400;
 }
 
+/******************** Home Section *********************/
+
 .home {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #F5F5F5;
 }
 
 .animation {
@@ -109,14 +123,13 @@ h1 {
     font-weight: 900;
 }
 
-p {
+.home p {
     margin-top: 30px;
-    max-width: 80%;
     font-size: 1.2em;
 }
 
 .animation {
-    margin-right: 12%
+    margin-right: 12%;
 }
 
 #lottie-animation {
@@ -177,6 +190,9 @@ p {
     display: block;
 }
 
+
+/******************** About Section *********************/
+
 main {
     background-color: #137547;
     position: relative;
@@ -187,6 +203,7 @@ main {
 }
 
 .about-container {
+    align-items: flex-end;
     display: flex;
     max-width: 80%;
     margin: 0 auto;
@@ -196,54 +213,37 @@ main {
     width: 30%;
 }
 
+.about-photo .img{
+    background-color: #1E2A38;
+    height: 400px;
+    border-radius: 10px;
+    width: 300px;
+}
+
 .about-description {
     width: 70%;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
+.about-description h2 {
+    font-size: 4.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.skill-category {
-    flex: 1;
-    min-width: 250px;
+.about-description h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #AE847E;
 }
 
-.skill-category h3 {
-    color: white;
+.about-description p {
+    margin-top: 50px;
     font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 25px;
-    position: relative;
-    padding-left: 15px;
-}
-
-.skill-category h3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 5px;
-    background-color: #AE847E;
-    border-radius: 50%;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 15px;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
+    color:#d1d1d1 ;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 30px;
 }
 
 .highlight {
@@ -253,9 +253,81 @@ main {
     font-weight: 300;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-color: #F5F5F5;
+/******************** Skills Section *********************/
+.skills {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.skills p {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #d1d1d1;
+    font-weight: 300;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    background-color: #1b985e;
+    box-shadow: 0 0 10px #0c4d2f;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.skill-category h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.skill-category .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -40px;
+    box-shadow: 0 0 10px #0c4d2f;
+    background-color: #AE847E;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.skill-category .marketing svg{
+    border: white 3px solid;
+    border-radius: 7px;
+    padding: 0px 4px;
+    width: 30px;
+}
+
+.skill-category svg {
+    width: 35px;
+    height: auto;
+}
+
+.skills-list {
+    text-align: left;
+    margin-left: 30px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
 }
