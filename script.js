@@ -17,7 +17,6 @@ window.onscroll = function() {
 
 
 function updateNavbar( ) {
-    console.log(window.scrollY);
     if(window.scrollY > 50){
         navbar.style.top = '0';
     }
