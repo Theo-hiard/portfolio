@@ -1,5 +1,7 @@
 const mainContent = document.querySelector('main');
 const navbar = document.querySelector('nav');
+const navUl = document.querySelector('nav ul');
+
 
 lottie.loadAnimation({
     container: document.getElementById('lottie-animation'),
@@ -10,14 +12,25 @@ lottie.loadAnimation({
 });
 
 window.onscroll = function() {
-    removeNavbar();
+    updateNavbar();
 }
 
-function removeNavbar( ) {
-    if(window.scrollY > 1050){
-        navbar.style.top = '-100px';
+
+function updateNavbar( ) {
+    console.log(window.scrollY);
+    if(window.scrollY > 50){
+        navbar.style.top = '0';
     }
     else{
-        navbar.style.top = '0';
+        navbar.style.top = '-100px';
+    }
+
+    if (window.scrollY > 920) {
+        navbar.classList.add('nav-active');
+        navUl.classList.add('ul-active');
+    }
+    else {
+        navbar.classList.remove('nav-active');
+        navUl.classList.remove('ul-active');
     }
 }

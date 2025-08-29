@@ -19,8 +19,29 @@ nav{
     background-color: #F5F5F5;
     z-index: 3;
     padding: 30px 0;
-    top: 0;
+    top: -100px;
     transition: all 0.3s ease;
+}
+
+.nav-active {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    background-color: #137547;
+}
+
+.ul-active{
+    border-bottom: whitesmoke 1px solid;
+}
+
+.ul-active li, .ul-active li a {
+    color: whitesmoke;
+}
+
+.ul-active .welcome {
+    font-weight: 600;
+}
+
+.ul-active .project a{
+    color: #AE847E;
 }
 
 ul {
@@ -30,6 +51,7 @@ ul {
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 li {
@@ -61,7 +83,7 @@ li {
 .home {
     display: flex;
     justify-content: space-between;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .animation {
