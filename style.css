@@ -341,20 +341,16 @@ main {
 .projects-container {
     width: 80%;
     margin: 0 auto;
-    background-color: #1b985e;
-    box-shadow: 0 0 10px #0c4d2f;
-    border-radius: 10px;
-    padding: 20px 50px;
 }
 
 .projects-container h2 {
-    text-align: center;
+    text-align: left;
     font-size: 2.2em;
     font-weight: 600;
 }
 
 .projects-container p {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     font-size: 1.1em;
     color: #d1d1d1;
@@ -370,8 +366,8 @@ main {
 }
 
 .project-card {
-    background-color: #137547;
-    box-shadow: 0 0 5px #0c4d2f;
+    background-color: #1b985e;
+    box-shadow: 0 0 10px #105d39;
     border-radius: 10px;
     padding: 20px;
     width: 30%;
@@ -405,4 +401,59 @@ main {
     width: 90%;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+/********************** Separator *********************/
+.separator-container {
+    width: 100%;
+    height: 3px;
+    background-color: #137547;
+    position: relative;
+    z-index: 2;
+}
+
+.separator {
+    background-color: white;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/********************** Contact Section *********************/
+footer{
+    background-color: #137547;
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+.contact {
+    background-color: #137547;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-description {
+    font-size: 1.1em;
+    color: #d1d1d1;
+    font-weight: 300;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: white;
+    border: white 2px solid;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
 }
