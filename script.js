@@ -13,6 +13,8 @@ lottie.loadAnimation({
 
 window.onscroll = function() {
     updateNavbar();
+    console.log(window.scrollY);
+    
 }
 
 
@@ -21,7 +23,7 @@ function updateNavbar( ) {
         navbar.style.top = '0';
     }
     else{
-        navbar.style.top = '-100px';
+        navbar.style.top = '-150px';
     }
 
     if (window.scrollY > 920) {

@@ -28,7 +28,7 @@ nav{
     background-color: #F5F5F5;
     z-index: 3;
     padding: 30px 0;
-    top: -100px;
+    top: -150px;
     transition: all 0.3s ease;
 }
 
@@ -104,18 +104,18 @@ header {
 }
 
 .animation {
-    max-width: 30%;
+    width: 30%;
 }
 
 .text {
     margin-left: 10%;
-    max-width: 45%;
+    width: 45%;
 }
 
 h1 {
     font-size: 5em;
     font-weight: 700;
-    max-width: 80%;
+    width: 80%;
 }
 
 .web-dev {
@@ -205,7 +205,7 @@ main {
 .about-container {
     align-items: flex-end;
     display: flex;
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -456,4 +456,48 @@ footer{
     border-radius: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-left: 10px;
+}
+
+/******************************** Media Queries *******************************/
+@media (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    /*** Navigation Bar ***/
+    nav {
+        height: 50px;
+        padding: 35px 0;
+    }
+    nav ul {
+        margin: 0;
+        width: 100%;
+        text-align: right;
+        justify-content: center;
+    }
+    nav .welcome {
+        font-size: 1.2em;
+        margin-right: 0 auto;
+        margin-left: 20px;
+    }
+    nav li{
+        margin-right: 15px;
+        font-size: 0.8em;
+    }
+
+    /*** Home Section ***/
+    .home h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+        width: 100%;
+        margin: 30px 20px 10px 20px;
+    }
+    .home .text {
+        width: 60%;
+        margin-left: 0;
+    }
+    .home .animation #lottie-animation{
+        width: 100px;
+        height: 100px;
+    }
 }
